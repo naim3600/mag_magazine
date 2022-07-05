@@ -1,0 +1,361 @@
+/*=================================
+Common CSS
+===============================*/
+body{
+    color: #666666;
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    background: #e0e0e0;
+}
+.container{
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.alignleft{
+    float: left;
+    margin-right: 10px;
+}
+/*=================================
+Top Header Area CSS
+===============================*/
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    width: 100%;
+    background: #2d2928;
+    padding: 20px 0;
+
+}
+.inner_top_header{
+    display: flex;
+    flex-direction: row;
+}
+.mini_menu{
+    flex: 60%;
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+.mini_menu ul li{
+    margin-right: 15px;
+    display: block;
+    position: relative;
+}
+.mini_menu ul li::after{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #c4c4c4;
+    position: absolute;
+    top: 7px;
+    right: -7px;
+}
+.mini_menu ul li:last-child::after{
+    display: none;
+    
+}
+.mini_menu ul li a{
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 14px;
+    transition: 0.5s;
+
+}
+.mini_menu ul li a:hover{
+    color: #acabab;
+}
+
+.social_area{
+    flex: 40%;
+}
+.social_area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.social_area ul li{
+    margin: 0 3px 0 10px;
+}
+.social_area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_area ul li a i{
+    color: #c5c5c5;
+    width: 33px;
+    height: 33px;
+    background: #3e3e3e;
+    border: 1px solid #494949;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 7px;
+    transition: 0.5s;
+}
+.social_area ul li a:hover i{
+    color: #fff;
+}
+
+/*=================================
+Main Header Area CSS
+===============================*/
+#main_header_area{
+    width: 100%;
+    overflow: hidden;
+}
+.inner_header h1{
+    color: #282828;
+    font-size: 100px;
+    font-weight: normal;
+    margin: 50px 0 40px;
+    text-align: center;
+
+}
+.inner_header p{
+    color: #4a4a4a;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*=================================
+Main Menu Area CSS
+===============================*/
+#main_menu_area{
+    width: 100%;
+}
+.inner_menu{
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    padding: 1px 0;
+}
+
+.inner_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+
+}
+.inner_menu ul li{
+    margin-right: 38px;
+    padding: 6px 0;
+}
+.inner_menu ul li:first-child{
+    margin-left: 2px;
+}
+.inner_menu ul li a{
+    display: block;
+    color: #333333;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.inner_menu ul li a:hover{
+    color: #999999;
+}
+
+/*=================================
+Hero Area CSS
+===============================*/
+#hero_area{
+    width: 100%;
+    background: #e0e0e0;
+}
+.inner_hero{
+    overflow: hidden;
+    border-bottom: 1px solid #999999;
+    padding: 35px 0;
+}
+.inner_hero h2{
+    color: #444444;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.inner_hero p{
+    color: #666666;
+    font-size: 16px;
+
+}
+.left_hero{
+    width: 54%;
+    float: left;
+    margin-right: 1%;
+    margin-left: 0;
+}
+.right_hero{
+    width: 45%;
+    float: right;
+    margin-top: -18px;
+    margin-right: 0;
+}
+.item{
+    margin-bottom: 35px;
+}
+.item img{
+    border: 1px solid #999999;
+    display: block;
+    padding: 4px;
+}
+.item p{
+    line-height: 1.25em;
+    font-size: 16px;
+    margin: 0;
+}
+
+/*=================================
+ Work Area CSS
+===============================*/
+#work_area{
+    width: 100%;
+}
+.inner_work{
+    padding: 30px 0;
+    border-top: 1px solid #999999;
+    margin-top: 1px;
+    overflow: hidden;
+
+}
+.child_work{
+    width: 65%;
+    float: left;
+    margin-right: 1%;
+}
+.child_work:last-child{
+    width: 34%;
+    float: right;
+    margin-right: 0;
+}
+.inner_child{
+    width: 49.5%;
+    float: left;
+    margin: 0 1%;
+    margin-left: 0;
+}
+
+.inner_child:last-child{
+    width: 49.5%;
+    float: right;
+    margin: 0;
+}
+.inner_child h3{
+    color: #666666;
+    font-size: 16px;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+.child_item{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #999999;
+}
+.child_item img{
+    display: block;
+    padding: 4px;
+    border: 1px solid #999999;
+}
+.child_item h4{
+    color: #444444;
+    font-size: 12px;
+    margin: 0;
+}
+.child_item p{
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.3em;
+}
+.child_item a{
+    float: right;
+    display: block;
+    color: #982115;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    clear: both;
+    transition: 0.5s;
+    margin-top: 3px;
+}
+.child_item a:hover{
+    color: #999999;
+}
+.child_work{
+    overflow: hidden;
+}
+.advertisement{
+    width: 49.4%;
+    float: left;
+    margin-right: 1%;
+    margin-left: 0;
+}
+.advertisement, .child_link h4{
+    color: #666666;
+    border-top: 5px solid #999999;
+    font-size: 13px;
+    margin: 0;
+    padding-top: 6px;
+    margin-bottom: 18px;
+}
+.advertisement h4{
+    margin-top: 0;
+}
+.child_link{
+    width: 49.4%;
+    float: right;
+    margin-right: 0;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.child_link h4{
+    margin-bottom: 12px;
+}
+.child_link ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.child_link ul li{
+    display: block;
+    line-height: 1.12em;
+}
+.child_link ul li a{
+    color: #982216;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.child_link ul li a:hover{
+    color: #999999;
+}
+
+
+
+
+
+
+
+
